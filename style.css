@@ -1,24 +1,134 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1c1c1c;
+  line-height: 1.5;
 }
 
-h1 {
-  color: #333333;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h2 {
-  color: #555555;
-}
-
-.box {
+/* Header */
+.header {
   background-color: #ffffff;
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 30px 0 24px;
+  margin-bottom: 24px;
 }
 
-li {
+.sub-tag {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
   margin-bottom: 8px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Content Cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+.stats {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #334155;
+}
+
+.description {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Rules List */
+.rules-list {
+  padding-left: 20px;
+}
+
+.rules-list li {
+  margin-bottom: 10px;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* Top Posts List */
+.posts-list {
+  list-style: none;
+}
+
+.post-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  background-color: #ffeae6;
+  color: #ff4500;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.post-title {
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px 0 40px;
+  color: #94a3b8;
+  font-size: 13px;
 }
