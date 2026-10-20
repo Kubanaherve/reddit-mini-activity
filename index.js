@@ -69,6 +69,7 @@ async function main() {
   html += '  <link rel="stylesheet" href="style.css">\n';
   html += "</head>\n<body>\n";
   html += "  <h1>Subreddit: " + info.display_name_prefixed + "</h1>\n";
+  html += "  <p>Web Infrastructure - Reddit Mini Activity</p>\n";
 
   html += '  <div class="box">\n';
   html += "    <h2>About</h2>\n";
